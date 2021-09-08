@@ -1,0 +1,106 @@
+echo "# Loginpage" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/zandondab/Loginpage.git
+git push -u origin main
+
+#include <string>
+#include <fstream>
+#include <cmath>
+
+using namespace std;
+
+
+int main () {
+
+bool isloggedin;
+string username1, username2, password1, password2;
+int choice;
+
+cout<< "1. SignUp \n";
+cout<< "2. Login \n";
+
+cin>>choice;
+
+switch (choice) {
+  case 1:
+    
+  //this is the sign up procedure
+  cout<< "Please enter Username: "; cin>>username1;
+  cout<<"\n";
+  cout<<"Please enter password: "; cin>>password1;
+  
+ofstream registration ("registration.txt");
+registration<< username1 << "\n" << password1;
+registration.close();
+break;
+
+  case 2:
+  //this is login procedure
+  
+ifstream registration ("registration.text");
+while (getline (registration, username1)){ ;
+getline (registration, username2);
+cout<<"Enter username: "; cin >>username2;
+cout<<"\n"<< "Enter Password: "; cin>>password2;
+
+if (username1==username2 && password1==password2) {
+isloggedin= true;}
+	else 
+    isloggedin= false;
+ registration.close();
+  }
+//now comes the currency convertor for US dollar against other currencies when the user is logged in
+
+int currency;
+double amount;
+double result;
+const yuanrate = 100
+const poundrate = 0.4
+const randrate = 200
+const rupeerate = 150
+cout <<"Please choose the currency you want to convert to dollar value below: \n";
+cout<<"1. Yuan \n";
+cout<<"2. Pound \n";
+cout<<"3. Rand \n";
+cout<<"4. Rupee \n";
+
+cout<<"Please Enter the Amount you want to convert: "; cin>>amount;
+
+switch (currency) {
+  case 1:
+    result = amount*yuanrate;
+    cout<<"The Dollar value of your Yuan money is " << result;
+   break;
+   
+   case 2:
+    result = amount*poundrate;
+    cout<<"The Dollar value of your Pound money is " <<result;
+   break;
+   
+   case 3:
+    result = amount*randrate;
+    cout<<"The dollar value of your Rand money is " << result;
+   break;
+   
+   case 4:
+    result = amount*rupeerate;
+    cout<<"The Dollar value of your Rupee money is " <<result;
+   break;
+  }
+
+return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
