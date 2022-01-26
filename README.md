@@ -20,7 +20,7 @@ We will then test this out on a new server inside github to see if it will displ
 
 ![Saint Augustine's University Logo](https://www.st-aug.edu/wp-content/uploads/2018/09/stauglogo_v2.png).
 
- Information about <www.saintaugustine'suniversity.org>
+ Information about <www.saintaugustine'suniversity.org>  
   It is a cool HBCU in Raleigh NC
   
   ### Other Places In Raleigh  
