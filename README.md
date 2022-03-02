@@ -1,15 +1,13 @@
-# Loginpage
+# LoginSystem
 ## Background Info
 
-I am buiding a program in ~~C++~~ that gives the user an option to either **signup** or **login**.
-If the user chooses to signup, the system saves his/her details in a file that will  
-be accessed when the user is logging in.
+I am buiding a program in **C++** that gives the user an option to login using their credentials.  The system would then compare those input credentials against existing credentials in a text file. If there is a match, the system will tell the user that he/she is logged  in successful otherwise it will tell him/her that loggin failed.
 
 ------
-After the user has logged in, the system is going to allow the user to covert his/her chosen currency to a US dollar value
+After logging in, the system is going to show the user my pdf resume
 * Have you username  
 * Have your Password  
-* Click Login  
+* Click Enter 
 > This is one line of text  
 > This is another line of text
 
